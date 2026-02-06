@@ -75,20 +75,19 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 -mt-8 relative z-20">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
           {[
-            { name: "Shop All", href: "/all-peptides", color: "from-teal-500 to-teal-700", icon: "🧪" },
-            { name: "Peptides For Sale", href: "/category/peptides-for-sale", color: "from-cyan-500 to-cyan-700", icon: "🏷️" },
-            { name: "Peptide Blends", href: "/category/peptide-blends", color: "from-emerald-500 to-emerald-700", icon: "🔬" },
-            { name: "Popular Peptides", href: "/category/popular-peptides", color: "from-sky-500 to-sky-700", icon: "⭐" },
-            { name: "Bioregulators", href: "/category/bioregulators", color: "from-indigo-500 to-indigo-700", icon: "🧬" },
-            { name: "Cosmetic Peptides", href: "/category/cosmetic-peptides", color: "from-violet-500 to-violet-700", icon: "✨" },
+            { name: "Shop All", href: "/all-peptides", color: "bg-[#1a3a4a]" },
+            { name: "Peptides For Sale", href: "/category/peptides-for-sale", color: "bg-[#1a3a4a]" },
+            { name: "Peptide Blends", href: "/category/peptide-blends", color: "bg-[#1a3a4a]" },
+            { name: "Popular Peptides", href: "/category/popular-peptides", color: "bg-[#1a3a4a]" },
+            { name: "Bioregulators", href: "/category/bioregulators", color: "bg-[#1a3a4a]" },
+            { name: "Cosmetic Peptides", href: "/category/cosmetic-peptides", color: "bg-[#1a3a4a]" },
           ].map((cat) => (
             <Link
               key={cat.href}
               href={cat.href}
-              className={`bg-gradient-to-br ${cat.color} rounded-xl p-5 text-white text-center hover:scale-105 transition-all shadow-lg hover:shadow-xl`}
+              className={`${cat.color} rounded-xl p-5 text-white text-center hover:bg-[#2d6a7a] transition-all shadow-lg hover:shadow-xl`}
             >
-              <div className="text-2xl mb-1">{cat.icon}</div>
-              <div className="text-xs font-semibold">{cat.name}</div>
+              <div className="text-sm font-semibold">{cat.name}</div>
             </Link>
           ))}
         </div>
