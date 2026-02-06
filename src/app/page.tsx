@@ -42,49 +42,75 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-section">
-        <div className="relative z-10 max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <section className="hero-section py-20 md:py-28">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
+          <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-4">
+            Research-Grade Peptides
+          </p>
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
             <span className="block">Certified Peptides</span>
-            <span className="block text-accent">for Scientific Research</span>
+            <span className="block text-accent mt-2">for Scientific Research</span>
           </h1>
+          <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+            Premium quality peptides with third-party testing and certification. Trusted by laboratories worldwide.
+          </p>
+          <div className="flex items-center justify-center gap-4">
+            <Link
+              href="/all-peptides"
+              className="bg-accent hover:bg-teal-400 text-primary font-bold px-8 py-3 rounded-full transition-all shadow-lg hover:shadow-xl"
+            >
+              Browse All Peptides
+            </Link>
+            <Link
+              href="/certifications"
+              className="border-2 border-white/30 hover:border-white text-white font-medium px-8 py-3 rounded-full transition-all"
+            >
+              View Certifications
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Category Cards */}
-      <section className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <section className="max-w-7xl mx-auto px-4 -mt-8 relative z-20">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
           {[
-            { name: "Shop All", href: "/all-peptides", color: "from-teal-600 to-teal-800" },
-            { name: "Peptides For Sale", href: "/category/peptides-for-sale", color: "from-cyan-600 to-cyan-800" },
-            { name: "Peptide Blends", href: "/category/peptide-blends", color: "from-emerald-600 to-emerald-800" },
-            { name: "Popular Peptides", href: "/category/popular-peptides", color: "from-sky-600 to-sky-800" },
-            { name: "Bioregulators", href: "/category/bioregulators", color: "from-indigo-600 to-indigo-800" },
-            { name: "Cosmetic Peptides", href: "/category/cosmetic-peptides", color: "from-violet-600 to-violet-800" },
+            { name: "Shop All", href: "/all-peptides", color: "from-teal-500 to-teal-700", icon: "🧪" },
+            { name: "Peptides For Sale", href: "/category/peptides-for-sale", color: "from-cyan-500 to-cyan-700", icon: "🏷️" },
+            { name: "Peptide Blends", href: "/category/peptide-blends", color: "from-emerald-500 to-emerald-700", icon: "🔬" },
+            { name: "Popular Peptides", href: "/category/popular-peptides", color: "from-sky-500 to-sky-700", icon: "⭐" },
+            { name: "Bioregulators", href: "/category/bioregulators", color: "from-indigo-500 to-indigo-700", icon: "🧬" },
+            { name: "Cosmetic Peptides", href: "/category/cosmetic-peptides", color: "from-violet-500 to-violet-700", icon: "✨" },
           ].map((cat) => (
             <Link
               key={cat.href}
               href={cat.href}
-              className={`bg-gradient-to-br ${cat.color} rounded-xl p-6 text-white text-center hover:scale-105 transition-transform shadow-lg`}
+              className={`bg-gradient-to-br ${cat.color} rounded-xl p-5 text-white text-center hover:scale-105 transition-all shadow-lg hover:shadow-xl`}
             >
-              <div className="text-sm font-semibold">{cat.name}</div>
+              <div className="text-2xl mb-1">{cat.icon}</div>
+              <div className="text-xs font-semibold">{cat.name}</div>
             </Link>
           ))}
         </div>
       </section>
 
       {/* Info Banner */}
-      <section className="max-w-7xl mx-auto px-4 pb-4">
-        <div className="bg-light rounded-xl p-6">
-          <h2 className="text-lg font-semibold text-primary mb-2">
-            All peptides are listed here, search the peptide that you want.
-          </h2>
-          <Link
-            href="/all-peptides"
-            className="text-sm text-accent hover:underline font-medium"
-          >
-            Frequently Asked Questions before ordering
-          </Link>
+      <section className="max-w-7xl mx-auto px-4 pt-8 pb-4">
+        <div className="bg-gradient-to-r from-primary/5 to-accent/5 border border-primary/10 rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div>
+            <h2 className="text-lg font-semibold text-primary">
+              All peptides are listed here, search the peptide that you want.
+            </h2>
+            <Link
+              href="/all-peptides"
+              className="text-sm text-accent hover:underline font-medium"
+            >
+              Frequently Asked Questions before ordering →
+            </Link>
+          </div>
+          <span className="bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+            {products.length} Products
+          </span>
         </div>
       </section>
 

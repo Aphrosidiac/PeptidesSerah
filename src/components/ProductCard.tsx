@@ -33,7 +33,6 @@ export default function ProductCard({ product }: { product: Product }) {
             <span className="price-regular">${product.price.toFixed(2)}</span>
           )}
         </div>
-        <div className="mt-2 text-xs text-gray-400 italic">Display only</div>
       </div>
     </div>
   );
