@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Uther Peptide - Certified Peptides for Scientific Research",
+  title: "Serah Peptides - Certified Peptides for Scientific Research",
   description: "Buy Certified Peptides Online for Research",
 };
 

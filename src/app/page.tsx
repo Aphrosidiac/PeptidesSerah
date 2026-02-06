@@ -208,7 +208,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-bold text-primary mb-2">24/7 Services</h3>
               <p className="text-sm text-gray-600">
-                Uther Online eCommerce offers 24/7 support, ensuring quick
+                Serah Peptides Online offers 24/7 support, ensuring quick
                 responses and seamless order assistance whenever you need it.
               </p>
             </div>

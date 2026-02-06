@@ -13,8 +13,7 @@ export default function Footer() {
               analytical purposes. NOT FOR HUMAN USAGE!
             </p>
             <p className="text-sm leading-relaxed mb-3">
-              <strong className="text-white">Research use only:</strong> UTHER
-              PEPTIDE is a chemical supplier of peptides which are only for
+              <strong className="text-white">Research use only:</strong> SERAH PEPTIDES is a chemical supplier of peptides which are only for
               research, laboratory, or analytical purposes. They are not
               permitted for human use, therapeutic, diagnostic, or clinical
               application. None of the products listed on our website are medical
@@ -57,10 +56,10 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-gray-700 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-2xl font-bold text-white tracking-wider">
-            UTHER PEPTIDE
+            SERAH PEPTIDES
           </div>
           <p className="text-sm text-gray-400">
-            Copyright &copy; 2025 UTHER PEPTIDE. All rights reserved
+            Copyright &copy; 2025 SERAH PEPTIDES. All rights reserved
           </p>
         </div>
       </div>

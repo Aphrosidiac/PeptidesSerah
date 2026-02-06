@@ -3,11 +3,11 @@ import { Shield, Award, Clock } from "lucide-react";
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-primary mb-6">About Uther Peptide</h1>
+      <h1 className="text-3xl font-bold text-primary mb-6">About Serah Peptides</h1>
 
       <div className="prose max-w-none">
         <p className="text-gray-600 leading-relaxed mb-6">
-          Uther Peptide is a global supplier of research-grade peptides, dedicated to
+          Serah Peptides is a global supplier of research-grade peptides, dedicated to
           providing the highest quality products for scientific research and laboratory
           use. Our commitment to excellence ensures that every peptide we produce meets
           the strictest standards of purity and consistency.

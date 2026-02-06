@@ -14,7 +14,7 @@ export default function CertificationsPage() {
         </div>
 
         <p className="text-gray-600 leading-relaxed mb-6">
-          All Uther Peptide products come with comprehensive certification
+          All Serah Peptides products come with comprehensive certification
           documentation, including Certificate of Analysis (COA) and third-party
           testing results.
         </p>

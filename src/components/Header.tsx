@@ -23,9 +23,9 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <span className="text-xl font-bold tracking-tight text-primary">
-              UTHER
+              SERAH
             </span>
-            <span className="text-xs text-gray-500 hidden sm:block">PEPTIDE</span>
+            <span className="text-xs text-gray-500 hidden sm:block">PEPTIDES</span>
           </Link>
 
           {/* Desktop Nav */}
